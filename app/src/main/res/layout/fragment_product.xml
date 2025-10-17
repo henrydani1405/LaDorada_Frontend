@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/border_gray">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product_placeholder" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Precio : S/ 99.00"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descricion : xxxxx"
+            android:textSize="19sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="3dp">
+
+            <Button
+                android:id="@+id/btnAddCart"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/cart"
+                android:text="Add Cart"
+                android:textColor="@color/dorado"
+                android:textSize="15dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/fondo"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txtDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descricion : xxxxx"
+                android:textSize="19sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

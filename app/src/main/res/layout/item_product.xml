@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product_placeholder" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del producto"
+        android:textStyle="bold"
+        android:textColor="@color/dorado"
+        android:textSize="20dp"
+        android:background="@color/fondo"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S/ 99.00"
+        android:textStyle="bold"
+        android:background="@color/fondo"
+        android:textColor="@color/dorado"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btnAddCart"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/cart"
+            android:text="Add Cart"
+            android:textColor="@color/fondo"
+            android:textSize="15dp"
+            android:backgroundTint="@color/dorado"/>
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/list"
+            android:text="Ver Detalle"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:backgroundTint="@color/scondary"/>
+
+    </LinearLayout>
+</LinearLayout>

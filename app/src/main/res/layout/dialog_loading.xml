@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/bg_loading2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- 🌟 Logo animado o estático -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+    android:layout_marginBottom="12dp"
+    android:contentDescription="@string/app_name" />
+
+    <!-- 🔄 Progress bar personalizada -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/fondo" />
+
+    <!-- ✨ Texto elegante -->
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Procesando solicitud..."
+        android:textColor="@color/fondo"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+</LinearLayout>
